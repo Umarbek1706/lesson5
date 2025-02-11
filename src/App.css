@@ -1,42 +1,236 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+    padding: 30px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+button {
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    border-radius: 40px;
+    background: #39DB4A;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border: none;
+}
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+
+}
+
+h1 {
+    margin: 50px 0;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 90.22px;
+    letter-spacing: 0%;
+
+}
+
+.card p {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 44.33px;
+    letter-spacing: 0%;
+
+}
+
+.catagories {
+    padding-top: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72.61px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.box {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .card {
-  padding: 2em;
+    padding: 15px 0;
+    box-shadow: 2px 10px 30px 0px #0000001A;
+    width: 326px;
+    height: 300px;
+    top: 1406px;
+    left: 155px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
 }
 
-.read-the-docs {
-  color: #888;
+h3 {
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36.31px;
+    text-align: center;
+
+}
+
+.menu {
+    padding: 50px 0;
+}
+
+.menu-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.menu-card {
+    width: 450px;
+    height: 450px;
+    top: 2225px;
+    left: 155px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 2px 9px 42px 0px #00000014;
+
+}
+
+.baho {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.menu-card p {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 44.33px;
+    letter-spacing: 0%;
+}
+
+.About {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.About-text p {
+    max-width: 655px;
+    height: 123px;
+
+
+}
+
+.About-text h1 {
+    max-width: 635px;
+    height: 250px;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 80px;
+    letter-spacing: 0%;
+}
+.services{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.servise-box{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.servise-box1{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.servise-card{
+    padding: 10px 0;
+    width: 277px;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: 7px 12px 43px 0px #00000024;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 15px;
+    
+}
+.services-text p{
+    margin-bottom: 20px ;
+
+
+}
+.servise-card p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.2px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+h5{
+font-weight: 700;
+font-size: 24px;
+line-height: 29.05px;
+letter-spacing: 0%;
+text-align: center;
 }
